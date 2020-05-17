@@ -1,20 +1,12 @@
 const formatString = function (string) {
-  const symbols = string.split('');
-
-  if (symbols.length <= 40) {
+  if (string.length <= 40) {
     return string;
   } else {
-    let deleteSymbols = symbols.splice(0, 40);
-    deleteSymbols.push('...');
-    let finalString = deleteSymbols.join('');
-
-    return finalString;
+    return string.slice(0, 41) + '...';
   }
 };
 
-/*
- * Вызовы функции для проверки работоспособности твоей реализации.
- */
+
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
 // вернется оригинальная строка
 

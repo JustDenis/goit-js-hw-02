@@ -10,6 +10,10 @@ while (true) {
   }
 
   input = Number(input);
+  if (Number.isNaN(input)){
+    alert('Вы ввели не число, попробуйте снова!');
+    continue;
+  }
   numbers.push(input);
 
   if (numbers.length === 0) {
