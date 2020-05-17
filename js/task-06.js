@@ -15,10 +15,6 @@ while (true) {
     continue;
   }
   numbers.push(input);
-
-  if (numbers.length === 0) {
-    alert('Было введено не число, попробуйте еще раз');
-  }
 }
 
 for (let number of numbers) {
